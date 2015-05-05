@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<link href="http://www.mustangv8.com/en2/themes/bluemust/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {font-size: 9pt}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #E2E2E2;
+}
+-->
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="Microsoft FrontPage 5.0" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="bluemust" columns="3" margin top="0" >
+  <tr>
+    
+    <td colspan="4"><table width="800" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td id="headerbarcenter">
+		<a href="<{$xoops_url}>"><img src="<{$xoops_url}>/themes/bluemust/logo.jpg" alt="<{$xoops_sitename}>" border="0" /></a>
+          </td>
+          <td id="headerbarright" valign="middle"><{$xoops_banner}>
+
+
+	</td>
+        </tr>
+      </table>
+	</td>
+  </tr>
+ <tr>
+    <td colspan="4"><table id="headerbarmain" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="7" id="headerbar_redbar"></td>
+        </tr>
+        <tr>
+          <td id="headerbar">Welcome to <{$xoops_sitename}></td>
+        
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td colspan="4" id="headerbar_infomain"><table width="800"  border="0" cellspacing="0" cellpadding="0" margin left="0">
+        <tr>
+          <td id="headerbar_infoleft"><a type="application/rss+xml" href="<{$xoops_url}>/backend.php"><img align="middle" src="<{$xoops_url}>/themes/bluemust/rss.png" alt="RSS View our feed"> </td>
+          <td id="headerbar_infomiddle"><form style=" margin-bottom: 2px; padding: 0px;" action="<{$xoops_url}>/search.php" method="get">
+              Search&nbsp;
+              <input type="text" name="query" size="20" />
+              
+              <input type="hidden" name="action" value="results" />
+              <br />
+            </form></td>
+            <td id="headerbar_infomiddle">
+            <{if $xoops_isuser}> Hello <{$xoops_uname}> <{/if}> <span class="right"> <{if $xoops_isuser}> <a href="<{$xoops_url}>/user.php?op=logout">Logout</a> <{else}>  <a href="<{$xoops_url}>/user.php">Login</a> <{/if}></td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0">  
+          <td id="leftcolumn">
+		
+		  
+ <!-- Start left blocks loop -->
+	<{foreach item=block from=$xoops_lblocks}>
+      <div class="blockTitle"><{$block.title}></div>
+      <div class="blockContent"><{$block.content}></div>
+      <{/foreach}>
+ <br/>
+            <!-- End left blocks loop --> 
+            <br /> 
+            <br /> </td> 
+
+          <td id="centercolumn"> <!-- Display center blocks if any --> 
+<{if $xoops_showcblock == 1}> 
+            <table cellspacing="0"> 
+              <tr> 
+                <td id="centerCcolumn" colspan="2"> <!-- Start center-center blocks loop --> 
+
+<{foreach item=block from=$xoops_ccblocks}> 
+                  <table align="center" cellpadding="0" cellspacing="2"> 
+                    <tr> 
+                      <td> <div class="blockTitle"><{$block.title}></div> 
+                        <div class="blockContent"><{$block.content}></div></td> 
+                    </tr> 
+                  </table> 
+<{/foreach}> 
+                  <!-- End center-center blocks loop --> </td> 
+              </tr> 
+              <tr> 
+                <td id="centerLcolumn"> <!-- Start center-left blocks loop --> 
+
+<{foreach item=block from=$xoops_clblocks}> 
+                  <table class="blok" align="center" cellpadding="3" cellspacing="2"> 
+                    <tr> 
+                      <td> <div class="blockTitle"><{$block.title}></div> 
+                        <div class="blockContent"><{$block.content}></div></td> 
+                    </tr> 
+                  </table> 
+<{/foreach}> 
+                  <!-- End center-left blocks loop --> </td> 
+                <td id="centerLcolumn"> <!-- Start center-right blocks loop --> 
+<{foreach item=block from=$xoops_crblocks}> 
+                  <table class="blok" align="center" cellpadding="3" cellspacing="2"> 
+                    <tr> 
+                      <td> <div class="blockTitle"><{$block.title}></div> 
+                        <div class="blockContent"><{$block.content}></div></td> 
+                    </tr> 
+                  </table> 
+
+<{/foreach}> 
+                  <!-- End center-right blocks loop --> </td> 
+              </tr> 
+            </table> 
+<{/if}> 
+            <!-- End display center blocks --> 
+            <div id="content"> <{$xoops_contents}> </div> 
+            <br /> 
+            <br /> 
+            <br /> </td> 
+<{if $xoops_showrblock == 1}> 
+          <td id="rightcolumn"> <!-- Start right blocks loop -->
+		<{foreach item=block from=$xoops_rblocks}>
+    		<div class="blockTitle"><{$block.title}></div>
+            <div class="blockContent"><{$block.content}></div>
+            <br/><{/foreach}>
+      	<!-- End right blocks loop -->
+            <br /> 
+            <br /> </td> 
+<{/if}> </tr> 
+       
+      </table> 
+ 
+  </tr> 
+
+
+
+       
+      <tr>
+    <td colspan="4" class="footerbar"><{$xoops_footer}> | Theme by <a href="http://www.mustangv8.com">Mustang</a>
+</td>  
+</tr>
+  
+
+	
+ 		
+    <link rel="alternate" type="application/rss+xml" title="RSS feeds" href="<{$xoops_url}>/backend.php" />
+</table>
+</body>
+</html>
